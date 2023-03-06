@@ -1,7 +1,16 @@
-import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import { GlobalStyle } from "./style/GlobalStyle.Styled";
+import MainCommonLayout from "./main/common/MainCommonLayout";
+import Router from "./main/routers/Router";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <BrowserRouter>
+      <GlobalStyle />
+      <MainCommonLayout />
+      <Router />
+    </BrowserRouter>
+  );
 }
 
 export default App;
