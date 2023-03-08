@@ -8,6 +8,10 @@ function Header() {
       <Logo to="">
         <img src="assets/img/logo_small.svg" alt="" />
       </Logo>
+      <BtnWrap>
+        <Btn to="/login">로그인</Btn>
+        <Btn to="/register">회원가입</Btn>
+      </BtnWrap>
     </HeaderWrap>
   );
 }
@@ -25,6 +29,15 @@ const Logo = styled(Link)`
   img {
     width: 100px;
   }
+`;
+
+const BtnWrap = styled.div`
+  display: flex;
+  gap: 0 1.5rem;
+`;
+
+const Btn = styled(Link)`
+  color: #444;
 `;
 
 export default Header;

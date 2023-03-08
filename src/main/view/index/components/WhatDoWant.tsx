@@ -35,10 +35,11 @@ function WhatDoWant() {
         {wantItemList.map((item) => {
           return (
             <li key={item.id}>
-              <strong>{item.what_kind}</strong>
-              <p>{item.desc}</p>
-              <Link to={item.path}>바로가기</Link>
-              <img src={item.img_src} alt="" />
+              <Link to={item.path}>
+                <p>{item.desc}</p>
+                <strong>{item.what_kind}</strong>
+                <img src={item.img_src} alt="" />
+              </Link>
             </li>
           );
         })}
@@ -68,6 +69,29 @@ const Item = styled.ul`
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
     width: 33.333%;
     height: 180px;
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      padding: 1rem;
+      strong {
+        display: block;
+        color: #333;
+        font-size: 1.3rem;
+        margin-top: 1rem;
+      }
+      p {
+        font-size: 1rem;
+        color: #666;
+      }
+      img {
+        display: block;
+        width: 80px;
+        height: 80px;
+        margin-left: auto;
+        background: #ddd;
+      }
+    }
   }
 `;
 

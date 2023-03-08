@@ -78,6 +78,10 @@ export const GlobalStyle = createGlobalStyle`
     a {
       text-decoration: none;
     }
+
+    input {
+      padding:0 0.2rem; font-size:1rem;
+    }
     /* .hidden-mobile {
         display: block;
         transition: 1s 0.4s;
