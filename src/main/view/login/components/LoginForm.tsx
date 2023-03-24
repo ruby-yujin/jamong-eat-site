@@ -20,8 +20,8 @@ function LoginForm() {
   );
 }
 
-const LoginFormWrap = styled.div`
-  width: 60%;
+export const LoginFormWrap = styled.div`
+  max-width: 500px;
   margin: 4rem auto 0;
   h1 {
     text-align: center;
@@ -30,24 +30,24 @@ const LoginFormWrap = styled.div`
   }
 `;
 
-const FormWrap = styled.form``;
+export const FormWrap = styled.form``;
 
-const FormGroup = styled.div`
+export const FormGroup = styled.div`
   margin-bottom: 1rem;
 `;
 
-const FormLabel = styled.label`
+export const FormLabel = styled.label`
   display: block;
   margin: 0.4rem 0;
 `;
 
-const FormInput = styled.input`
+export const FormInput = styled.input`
   width: 100%;
   height: 50px;
   border: 1px solid #ddd;
 `;
 
-const BtnSubmit = styled.button`
+export const BtnSubmit = styled.button`
   width: 100%;
   height: 50px;
   font-size: 1.4rem;

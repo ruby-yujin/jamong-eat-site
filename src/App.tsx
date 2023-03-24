@@ -7,8 +7,7 @@ function App() {
   return (
     <BrowserRouter>
       <GlobalStyle />
-      <MainCommonLayout />
-      <Router />
+      <MainCommonLayout children={undefined} />
     </BrowserRouter>
   );
 }
