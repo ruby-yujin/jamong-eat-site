@@ -10,7 +10,7 @@ function Router() {
       <Route path="/" element={<Main />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
-      <Route path="/serach_list" element={<SearchList />} />
+      <Route path="/search_list" element={<SearchList />} />
     </Routes>
   );
 }
