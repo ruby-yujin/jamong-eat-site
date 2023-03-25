@@ -1,6 +1,10 @@
+
+![스크린샷 2023-03-25 오후 5 16 40](https://user-images.githubusercontent.com/101633842/227705981-fc06b66c-e808-4eea-a26a-40012fdad768.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
