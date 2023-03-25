@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import SearchItem from "./SearchItem";
 
 function Visual() {
   return (
@@ -10,6 +11,7 @@ function Visual() {
           솔직한 리뷰, 믿을 수 있는 평점! <br />
           내돈내산 자몽맛집
         </h1>
+        <SearchItem />
       </VisualTitle>
     </VisualWrap>
   );
@@ -21,7 +23,7 @@ const VisualWrap = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  img {
+  > img {
     position: absolute;
     top: 0;
     right: 0;
@@ -53,6 +55,8 @@ const VisualTitle = styled.div`
     color: #fff;
     text-align: center;
     line-height: 3rem;
+    margin-bottom: 1rem;
   }
 `;
+
 export default Visual;
