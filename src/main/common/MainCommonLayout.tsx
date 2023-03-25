@@ -21,13 +21,10 @@ function MainCommonLayout({ children }: Props) {
   );
 }
 
-const Container = styled.div`
-  height: 100vh;
-`;
+const Container = styled.div``;
 
 const Content = styled.div`
   height: calc(100% - 150px);
-  border: 1px solid red;
 `;
 
 export default MainCommonLayout;

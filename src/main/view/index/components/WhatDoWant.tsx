@@ -6,25 +6,22 @@ const wantItemList = [
     id: 1,
     what_kind: "한식",
     desc: "한국사람은 한식이제!",
-    img_src: "",
     img_alt: "한식이미지",
-    path: "",
+    path: "assets/img/main/food_kr.png",
   },
   {
     id: 2,
     what_kind: "양식",
     desc: "왜 진득한 밀가루 땡기는날",
-    img_src: "",
     img_alt: "양식이미지",
-    path: "",
+    path: "assets/img/main/food_en.png",
   },
   {
     id: 3,
     what_kind: "중식",
     desc: "배에 기름칠 좀 해보까아~",
-    img_src: "",
     img_alt: "중식이미지",
-    path: "",
+    path: "assets/img/main/food_ch.png",
   },
 ];
 function WhatDoWant() {
@@ -38,7 +35,7 @@ function WhatDoWant() {
               <Link to={item.path}>
                 <p>{item.desc}</p>
                 <strong>{item.what_kind}</strong>
-                <img src={item.img_src} alt="" />
+                <img src={item.path} alt="" />
               </Link>
             </li>
           );
@@ -86,10 +83,9 @@ const Item = styled.ul`
       }
       img {
         display: block;
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         margin-left: auto;
-        background: #ddd;
       }
     }
   }
